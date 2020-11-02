@@ -1,0 +1,1757 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family:"Raleway",sans-serif;
+    font-size: 15px;
+    background-color: rgb(21, 3, 54);
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    height: 600vh;
+  
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(29, 6, 71);
+    position: sticky;
+    top: 0px;
+    transition: all 0.3s linear;
+    align-items: center;
+    box-shadow: 0 1px 0 0 #fa0303;
+}
+.navbar .logo{
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    border-radius: 30px;
+    margin-left: 5px;
+    transition: all 0.3s linear;
+}
+.navbar .logo img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}   
+.navbar .logo .title-logo{
+    display: flex;
+    font-size: 20px;
+}
+
+.navbar .logo .title-logo .robot{
+    color: red;
+}
+.navbar .responsive-navbar{
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s linear;
+}
+.navbar .responsive-navbar .nav-left{
+    display: flex;
+    padding: 0 25px;
+    height: 40px;
+    align-items: center;
+    transition: all 0.3s linear;
+}
+.navbar .responsive-navbar .nav-left a{
+    text-decoration: none;
+    padding: 0 34px;
+    list-style-type: none;
+    color: #f4f4f4;
+    padding: 10px 25px;
+    transition: all 0.3s linear;
+}
+.navbar .responsive-navbar .nav-left a:hover{
+    color: rgb(36, 7, 90);
+    transition: all 0.3s linear;
+    background-color: #f4f4f4;
+   
+}
+.navbar .responsive-navbar .nav-left li{
+    list-style-type: none;
+}
+.navbar .responsive-navbar .navbar-right {
+    display: flex;
+    width: 15%;
+    align-items: center;
+    list-style-type: none;
+    padding: 0 10px;
+    height: 40px;
+    transition: all 0.3s linear;
+}
+
+.navbar .responsive-navbar .navbar-right a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s linear;
+    font-size: 15px;
+}
+.navbar .responsive-navbar .navbar-right  .right1{
+    background-color: red;
+    padding: 7px 2px;
+    border-radius: 30px;
+}
+.navbar .responsive-navbar .navbar-right  .right1:hover{
+    opacity: 0.8;
+    transition: all 0.3s linear;
+}
+
+/*Sidebar*/
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 290px;
+    top: 0;
+    left: 0;
+    background-color: rgb(29, 6, 71);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    background-color: white;
+    color: red;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  .sidepanel .closebtn:hover{
+      background-color: rgb(29, 6, 71);
+  }
+  
+  .openbtn {
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(29, 6, 71);
+    padding: 3px 15px;
+    border: none;
+    color: white;
+    outline: none;
+    display: none;
+    transition: all 0.3s linear;
+  }
+  .openbtn:hover{
+      color: #5d6b80;
+  }
+/*End of Sidebar*/
+
+
+
+/*Searchbox*/
+.searchBox
+{
+    transform: translate(-50%,0%);
+    background-color: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    position: absolute;
+    left: 50%;
+    transition: all 0.3s linear;
+}
+.searchBox:hover > .searchInput{
+    width: 350px;
+    padding: 10px 6px;
+    transition: all 0.3s linear;
+}
+.searchBox:hover > .searchButton{
+    color: #ffffff;
+    transition: all 0.3s linear;
+}
+.searchButton{
+    color: #ffffff;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    transition: all 0.4s linear;
+}
+.searchInput{
+    font-size:15px ;
+    padding: 0px;
+    border:none;
+    background: none;
+    float: left;
+    outline: none;
+    color: #ffffff;
+    transition:all 0.4s linear;
+    width: 0px;
+}
+/*End of Searchbox*/
+/*First Page*/
+
+.img-container{
+    background-color: rgb(21, 3, 54);
+    width: 100%;
+    height: 99vh;
+    display: flex;
+    justify-content: space-between  ;
+}
+.img-container .text-pic{
+    width: 45%;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container .text-pic .text1{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 29px;
+    padding: 10px 0;
+}
+.img-container .text-pic .text1 .title1{
+    
+    color: white;
+    font-weight: normal;
+    text-align: center;
+}
+.img-container .text-pic .text1 .title2{
+    color: red;
+    font-weight: normal;
+}
+.img-container .text-pic p{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+.img-container .text-pic .btn{
+    width: 120px;
+    height: 50px;
+    border-radius: 30px;
+    margin-left: 280px;
+}
+.img-container .text-pic a{
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+    
+}
+.img-container .text-pic a:hover{
+    opacity: 0.6;
+}
+
+.img-container img{
+    width: 50%;
+    height: 95%;
+}
+.img-container .grid{
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    top: 101vh;
+    left: 1193.38px;
+}
+/*End of First Page*/
+
+
+/*Start middle-container*/
+.middle-container{
+    width: 100%;
+    height: 95vh;
+    background-color: rgb(36, 7, 90);
+}
+.middle-container .middle-title{
+    width: 100%;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Raleway",sans-serif;
+    font-size: 30px;
+}
+.middle-container .middle-container1{
+    display: flex;
+    width: 100%;
+    max-width: 80rem ;
+    margin: auto;
+    padding: 20px 40px;
+    text-align: justify;
+}
+.middle-container .middle-container1 .tag1{
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: 17px;
+}
+.middle-container .middle-container1 .tag1 p{
+    margin-bottom: 10px;
+}
+.member span{
+    color: #0683cc;
+}
+.Robot span{
+    color: #0683cc;
+
+}
+.middle-container1 .tag1 a{
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: rgb(19, 111, 218);
+    width: 12%;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: #ffffff;
+    transition: all 0.3s linear ;
+}
+.middle-container1 .tag1 a:hover{
+    opacity: 0.8;
+}
+.middle-container .middle-container1 .grid{
+    position: absolute;
+    top: 110vh;
+    left: 100px;
+}
+.middle-container .middle-container1 .tag1 .grid{
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    left: 1250px;
+    top: 1480px;
+}
+/*End of middle-container*/
+
+/*Vision*/
+.vision{
+    background-color: rgb(21, 3, 54);
+    color: white;
+    width: 100%;
+    height: 100vh;
+}
+.vision .vision1{
+    width: 100%;
+    height: 100%;
+}
+.vision .vision1 .vision-title{
+    width: 100%;
+    height: 10%;
+
+
+    text-align: center;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-weight: normal;
+}
+/* .vision .vision1 .detail-vision{
+    
+    width: 80%;
+    margin: auto;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.vision .vision1 .detail-vision .vision-left{
+    width:30%;
+    height: 80%;
+    margin:auto ;
+    background: url(image/kosal.png);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius: 5px;
+}
+.vision .vision1 .vision-left .liner{
+    background: rgb(4, 202, 252);
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+.vision .vision1 .vision-left .detail-left{
+    width: 22.8rem;
+    height: 34.3rem;
+    position: absolute;
+    top: 218.8vh;
+    padding: 20px;
+}
+.vision .vision1 .vision-left .detail-left p{
+    font-size: 17px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.vision .vision1 .detail-vision .vision-center{
+    width: 34%;
+    background: url(image/kosal.png);
+    height: 95%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+.vision .vision1 .vision-center .liner1{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+.vision .vision1 .vision-center .detail-center{
+    width: 26rem;
+    height: 34.3rem;
+    position: absolute;
+    top: 210.8vh;
+    padding: 20px;
+}
+.vision .vision1 .vision-center .detail-center p{
+    text-align: justify;
+    margin: 10px;
+    font-size: 17px;
+}
+
+.vision .vision1 .detail-vision .vision-right{
+    width:30%;
+    height: 80%;
+    margin:auto ;
+    background:url(image/bg2.png);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius: 5px;
+}
+.vision .vision1 .vision-right .liner{
+    background-color: green;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+.vision .vision1 .vision-right .detail-right{
+    width: 22.8rem;
+    height: 34.3rem;
+    position: absolute;
+    top: 218.8vh;
+    padding: 20px;
+}
+.vision .vision1 .vision-right .detail-right p{
+    font-size: 17px;
+    margin: 10px;
+    text-align: justify;
+} */
+.detail-vision{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.box-left{
+    width:300px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	overflow: hidden;
+    margin: 10px;
+
+}
+.detail-overlay{
+    padding: 10px;
+    text-align: justify;
+}
+
+.box{
+	height: 550px;
+    position:relative;
+}
+.box img{
+	width:100%;
+	height: 100%;
+	object-fit: cover;
+	box-sizing: border-box;
+}
+.overlay{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width:100%;
+	height: 100%;
+	background-color: rgba(92,95,236,0.6);
+	
+}
+.box-center{
+    width:400px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	overflow: hidden;
+}
+.box-center .box{
+    height: 650px;
+    position: relative;
+}
+.box-center .box img{
+    width:100%;
+	height: 100%;
+	object-fit: cover;
+	box-sizing: border-box;
+}
+.box-center .box .overlay{
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width:100%;
+	height: 100%;
+	background-color: rgba(243, 61, 61, 0.6);
+}
+
+.box-right{
+    width:300px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	overflow: hidden;
+    margin: 10px;
+}
+.box-right .box{
+    height: 550px;
+    position: relative;
+}
+
+.box-right .box img{
+    width:100%;
+	height: 100%;
+	object-fit: cover;
+	box-sizing: border-box;
+}
+.box-right .box .overlay{
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width:100%;
+	height: 100%;
+	background-color: rgba(61, 243, 116, 0.6);
+}
+
+/*End of Vision*/
+
+
+/*Start of Section Reputation*/
+.reputation
+{
+    width: 100%;
+    height:95vh;
+    background-color: rgb(36, 7, 90);
+}
+.reputation .reputation-title{
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-weight: normal;
+    font-size:25px;
+}
+.reputation .detail-reputation{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    background-color: rgb(21, 3, 54);
+    height: 80%;
+}
+.reputation .detail-reputation .sponsor-img{
+    width:50%;
+    height: 550px;
+    padding: 20px 10px;
+    margin: auto;
+}
+.reputation .detail-reputation .sponsor-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.reputation .detail-reputation .pnc-event{
+    background-color: white;
+    padding: 15px 20px;
+    width: 80%;
+    height: 100%;
+}
+.reputation .detail-reputation .pnc-event h2{
+    font-weight: normal;
+}
+.reputation .detail-reputation .pnc-event p{
+    margin-bottom: 15px;
+}
+.reputation .detail-reputation .pnc-event img{
+    width: 100%;
+    height: 300px;
+}
+.reputation .detail-reputation .pnc-event h3{
+    padding: 15px 0;
+    font-weight: normal;
+    font-size: 20px;
+}
+.reputation .detail-reputation .pnc-event .lorem{
+    text-align: justify;
+}
+.reputation .detail-reputation .pnc-event .btn-reputation{
+    background-color:red;
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    float: right;
+    transition: all 0.3s linear;
+}
+.reputation .detail-reputation .pnc-event a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.reputation .detail-reputation .pnc-event .btn-reputation:hover{
+    opacity: 0.3;
+}
+/*End of Section Reputation*/
+
+/*Start Of section Leader*/
+.leader{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(21, 3, 54);
+    padding: 70px 0 ;
+
+
+}
+.leader .detail-leader{
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    width: 60%;
+    margin: auto;
+    text-align: justify;
+}
+
+.leader .detail-leader .leader-title h1{
+    font-weight: normal;
+    margin-bottom: 15px;
+    font-size: 30px;
+    text-align: center  ;
+    font-style: unset;
+}
+.leader .detail-leader .leader-title h2{
+    font-weight: normal;
+    color: red;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/*End of section Leader*/
+
+/*Registration form validate*/
+.form{
+    width: 100%;
+    height: 28vh;
+    color: #ffffff;
+    padding: 10px 40px;
+    font-family: "Raleway",sans-serif;
+    background-color: rgb(29, 6, 71);
+}
+.form .form1{
+    width: 100%;
+    display: flex;
+
+}
+.form .form1 .form-title{
+    width: 40%;
+    text-align: center;
+}
+.form .form1 .form-title h1{
+    font-weight: normal;
+    font-family: "Raleway",sans-serif;
+    color: aqua;
+}
+.form .form1 .form-title .line{
+    height: 1px;
+    width: 70px;
+    background-color:aqua;
+    margin-bottom: 10px;
+    margin-left: 43.6%;
+}
+.form .form1 .contect{
+    width: 40%;
+    height: 90vh;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: relative;
+    left: 15%;
+    margin-top: 20px;
+}
+.form .form1 .contect form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.form .form1 .contect form h1{
+    font-weight: normal;
+    color: #333333;
+    font-size: 19px
+}
+.form .form1 .contect form p{
+    color: #333333;
+    padding:1px 0px 10px 0;
+}
+.form .form1 .contect form label{
+    font-size: 16px;
+    color: #333333;
+}
+.form .form1 .contect form input{
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    resize: vertical;
+    outline: none;
+    font-size: 15px;
+}
+.form .form1 .contect textarea{
+    outline: none;
+    border: 1px solid #ccc;
+}
+ .form .form1 .contect form .upload{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+} 
+
+
+.form .form1 .contect form .upload svg{
+    width: 30px;
+    
+}
+.form .form1 .contect form .upload #custom-button{
+    width: 150px;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: #0aa0f7;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.form .form1 .contect form .upload #custom-text{
+    font-size: 15px;
+    width: 190px;
+    border-radius: 5px;
+    text-align: center;
+}
+.form .form1 .contect form .upload #fakebtn{
+    width: 150px;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: #0aa0f7;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form .form1 .contect form .upload  #custom-Text{
+    color: #ccc;
+    font-size: 15px;
+}
+
+
+/* .form .form1 .contect form .upload input{
+    width: 570px;
+    border: 1px solid #ccc;
+    width: 16%;
+    border: none;
+    height: 39px;
+    background-color: #0683cc;
+    margin-top: 10px;
+} */
+.form .form1 .contect form input[type=submit]{
+    background-color: #0aa0f7;
+    margin-top: 10px;
+    color: white;
+    width: 160px;
+    height: 33px;
+    transition: all 0.3s linear ;
+}   
+.form .form1 .contect form input[type=submit]:hover{
+    opacity: 0.6;
+}
+.background{
+    background-color: rgb(29, 6, 71);
+}
+/*Footer*/
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(21, 3, 54);
+    color: #ffffff;
+    margin-top: 15%;
+    border-top: 1px solid #fa0303;
+}
+footer .footer{
+    width: 100%;
+    padding: 10px 120px;
+    display: flex;
+    justify-content: space-around;
+}
+footer .footer .footer-left{
+    width: 40%;
+}
+footer .footer .footer-left h1{
+    font-weight: normal;
+    color: rgb(39, 157, 253);
+    font-size: 26px;
+}
+footer .footer .footer-left .line{
+    background-color: rgb(39, 157, 253);
+    width: 90px;
+    height: 1px;
+    margin-bottom: 5px;
+}
+footer .footer .footer-left p{
+    margin-bottom: 6px;
+}
+footer .footer .footer-left .social{
+
+    width: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .footer .footer-left .social a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+
+}
+
+footer .footer .footer-right{
+    width: 50%;
+    margin-left: 500px;
+}
+footer .footer .footer-right h1{
+    font-weight: normal;
+    font-size: 26px;
+    color: rgb(39, 157, 253);
+}
+footer .footer .footer-right .line{
+    background-color: rgb(39, 157, 253);
+    width: 180px;
+    height: 1px;
+    margin-bottom: 5px;
+}
+footer .footer .footer-right p{
+    margin-bottom: 4px;
+}
+footer .footer .footer-right input{
+    width: 380px;
+    background-color: rgb(21, 3, 54);
+    padding: 7px 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+footer .footer .footer-right button{
+    background-color: #0aa0f7;
+    padding: 10px;
+    width: 130px;
+    border: none;
+    color: white;
+    outline: none;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.finish{
+    width: 100%;
+    background-color: rgb(36, 7, 90);
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+
+/*End of Footer*/
+
+
+/*End Registration form validate*/
+
+/*Responsive website*/
+@media screen and (max-width:5000px){
+    .reputation{
+        width: 100%;
+    }
+    .reputation .detail-reputation{
+        width: 100%;
+        max-width: 95%;
+    }
+    .form{
+        width:100%;
+        padding: 10px 35px;
+    }
+    .form .form1 .contect form .upload input{
+        width: 17%;
+    }
+}
+@media screen and (max-width:1430px){
+
+    .navbar{
+        width: 100%;
+        transition: all 0.3s linear;
+    }
+    .navbar .responsive-navbar .navbar-right{
+        margin-right: 10px;
+        width: 200px;
+    }
+    .searchBox{
+        display: none;
+    }
+    .img-container{
+        width: 100%;
+        height: 99vh;
+    }
+    .img-container .text-pic{
+        width: 45%;
+    }
+    .img-container .text-pic .text1 h1{
+        font-size: 55px;
+    }
+    .img-container .text-pic p{
+        font-size: 17px;
+    }
+    .img-container .img-container1{
+        width: 50%;
+    }
+    .img-container .text-pic .btn{
+        margin-left: 250px;
+    }
+    .middle-container{
+        width: 100%;
+        height: 95vh;
+    }
+    .middle-container .middle-container1 {
+        max-width: 97%;
+    }
+    .middle-container .middle-container1 img{
+        width: 50%;
+    }
+    .middle-container .middle-container1 .grid{
+        display: none;
+    }
+    .img-container .grid{
+        display: none;
+    }
+
+    .vision{
+        width: 100%;
+        height: 100vh;
+    }
+    .vision .vision1{
+        width: 100%;
+        height: 100vh;
+    }
+    .vision .vision1 .detail-vision{
+        width: 90%;
+        height: 90vh;
+    }
+
+    .reputation{
+        width: 100%;
+    }
+    .reputation .detail-reputation .pnc-event .btn-reputation{
+        margin-top: 0px;
+    }
+    .reputation .detail-reputation .pnc-event p{
+        margin-bottom: 10px;
+    }
+    .reputation .detail-reputation .pnc-event h3{
+        padding: 10px 0;
+    }
+    .leader{
+        width: 100%;
+    }
+    .leader .detail-leader{
+        width: 65%;
+    }
+    footer{
+        width: 100%;
+    }
+
+    
+   
+  
+}
+
+@media screen and (max-width:1300px){
+    .vision{
+        width: 100%;
+    }
+    .vision .vision1 {
+        width: 100%;
+    }
+    .vision .vision1 .detail-vision{
+        width: 95%;
+    }
+    .reputation{
+        width: 100%;
+    }
+    .reputation .detail-reputation{
+        width: 100%;
+        max-width: 97%;
+    }
+    .reputation .detail-reputation .pnc-event p{
+        margin-bottom: 0;
+    }
+    footer{
+
+        width: 100%;
+    }
+
+    footer .footer .footer-right{
+        margin-left: 450px;
+        width: 45%;
+    }
+
+
+}
+
+@media screen and (max-width:1200px){
+    .img-container .img-container1{
+        display: none;
+    }
+    .img-container{
+        width: 100%;
+    }
+    .img-container .text-pic{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-container .text-pic .btn{
+        margin-left: 0px;
+    }
+    .vision{
+        width: 100%;
+    }
+    .vision .vision1{
+        width: 100%;
+    }
+    .vision .vision1 .detail-vision{
+        width: 100%;
+    }
+    .leader{
+        width: 100%;
+    }
+    .leader .detail-leader {
+        width: 80%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+    .leader .detail-leader .video{
+        text-align: center;
+        padding: 10px 0;
+    }
+    .form{
+        width: 100%;
+    }
+    .form .form1 .contect{
+        width: 40%;
+        height: 86vh;
+    }
+    footer{
+        width: 100%;
+        
+    }
+    footer .footer .footer-left{
+        width: 40%;
+    }
+    footer .footer .footer-right{
+        margin-left: 400px;
+        width: 50%;
+    }
+
+
+  
+    
+}
+
+@media screen and (max-width:1150px){
+    .vision{
+        width: 100%;
+    }
+    .vision .vision1 {
+        width: 100%;
+    }
+    .vision .vision1 .detail-vision{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .box-left{
+        width:600px;
+        
+    }
+    .box {
+        height: 900px;
+        
+    }
+    .box-left .box img{
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .box-center{
+        width: 700px;
+
+    }
+    .box-center .box{
+        height: 900px;
+    }
+    .box-center .box img{
+        width: 100%;
+        height:auto;
+        background-size: cover;
+        background-position: center;background-repeat: no-repeat;
+    }
+
+    .box-right{
+        width: 600px;
+    }
+    .box-right .box{
+        height: 900px;
+    }
+    .box-right .box img{
+        width: 100%;
+        height: auto;
+    }
+   /* .reputation .detail-reputation{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 85%;
+    }
+    .reputation .detail-reputation .sponsor-img{
+        width: 80%;
+        height: 350px;
+    }
+    */
+    .reputation{
+        width: 100%;
+    }
+    .reputation .detail-reputation .pnc-event{
+        display: none;
+    }
+    footer{
+        width: 100%;
+    }
+    footer .footer .footer-right{
+        margin-left: 300px;
+    }
+    footer .footer .footer-right input{
+        width:300px ;
+    }
+    .spac{
+        height: 20vh;
+        width: 100%;
+    }
+   
+}
+
+@media screen and (max-width:900px){
+    .middle-container{
+        width: 100%;
+        height: 98vh;
+    }
+    .middle-container .middle-container1{
+        display: flex;
+        flex-direction: column;
+    }
+    .middle-container .middle-container1 img{
+        width: 90%;
+        height: 400px;
+        margin: auto;
+    }
+    .middle-container .middle-title{
+        padding: 10px 0;
+    }
+    .middle-container .middle-container1 .button-btn{
+        text-align: center;
+    }
+    .vision{
+        width: 100%;
+    }
+  
+    .form{
+        width: 100%;
+    }
+    .form .form1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+    }
+    .form .form1 .form-title{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .form .form1 .contect form label{
+        font-size: 16px;
+        color: #333333;
+    }
+    .form .form1 .contect form input{
+        padding: 7px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        resize: vertical;
+        outline: none;
+        font-size: 15px;
+    }
+
+    .form .form1 .contect{
+        width: 67%;
+        height: 90vh;
+        border-radius: 5px;
+        background-color: #ffffff;
+        position: relative;
+        left: 15%;
+        margin-top: 20px;
+    }
+    .spac{
+        height: 30vh;
+    }
+   
+    
+}
+
+@media screen and (max-width:800px){
+    .vision{
+        width: 100%;
+    }
+   
+    .reputation{
+        width: 100%;
+    }
+    .reputation .detail-reputation .sponsor-img{
+        width: 90%;
+
+    }
+    footer{
+        width: 100%;
+    }
+
+    footer .footer{
+        width: 100%;
+    }
+    footer .footer .footer-right{
+        margin-left: 100px;
+    }
+    
+}
+
+@media screen and (max-width:740px){
+    .navbar{
+        width: 100%;
+    }
+    .navbar .logo{
+        width: 110px;
+    }
+    .navbar .logo img{
+        width: 25px;
+        height: 25px;
+    }
+    .navbar .logo .title-logo h5{
+        font-size: small;
+    }
+    .navbar .responsive-navbar .navbar-right li a {
+        font-size: small;  
+    }
+    .navbar .responsive-navbar .nav-left{
+        
+        width: 290px;
+    }
+    .navbar .responsive-navbar .nav-left li a{
+        font-size: small;
+        padding: 10px 10px;
+    }
+    .img-container{
+        width: 100%;
+    }
+    .img-container .text-pic{
+        width: 100%;
+        
+    }
+    .middle-container{
+        width: 100%;
+    }
+    .middle-container .middle-container1 {
+        max-width: 100%;
+    }
+    .middle-container .middle-container1 img{
+        width: 100%;
+    }
+    .middle-container .middle-container1 .tag1{
+        margin-left: 0px;
+    }
+    footer .footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 35px;
+        
+    }
+    footer .footer .footer-right{
+        margin-left: 0;
+    }
+    footer .footer .footer-left{
+        padding: 10px 0;
+    }
+
+    .vision{
+        width: 100%;
+    }
+    .vision .vision1 {
+        width: 100%;
+    }
+    .vision .vision1 .detail-vision{
+        width: 100%;
+    }
+    .vision .vision1 .detail-vision .box-left{
+        width: 90%;
+    }
+    .vision .vision1 .detail-vision .box-center{
+        width: 98%;
+    }
+    .vision .vision1 .detail-vision .box-right{
+        width: 90%;
+    }
+
+
+}
+
+@media screen and (max-width:732px){
+    .middle-container{
+        height: 100vh;
+    }
+    .middle-container .middle-container1 img{
+        width: 100%;
+        height: 350px;
+        padding: 0;
+    }
+
+    .vision{
+        width: 100%;
+    }
+    .spac{
+        height: 40vh;
+    }
+    .form .form1 .contect{
+        width: 70%;
+    }
+   
+}
+
+@media screen and (max-width:610px){
+    .navbar{
+        width: 100%;
+        height: 40px;
+    }
+    .navbar .logo{
+        width: 120px;
+        height: 30px;
+
+    }
+    .navbar .responsive-navbar .nav-left{
+        display: none;
+    }
+    .navbar .responsive-navbar .navbar-right{
+        display:none;
+    }
+    .openbtn{
+        display: block;
+    }
+    .searchBox{
+        height: 35px;
+        display: block;
+    
+    }
+    .searchButton{
+        font-size: small;
+        height: 35px;
+        
+    }
+    .searchBox:hover > .searchInput{
+        width: 200px;
+        
+        transition: all 0.3s linear;
+    }
+    .middle-container{
+        width: 100%;
+        height: 95vh;
+    }
+    .middle-container .middle-container1 img{
+        width: 100%;
+        height: 300px;
+        padding: 0;
+    }
+
+    .vision{
+        width: 100%;
+    }
+   
+    .leader{
+        width: 100%;
+    }
+    .leader .detail-leader {
+        width: 100%;
+        padding: 5px;
+    }
+    .leader .detail-leader .leader-title h1{
+        margin-bottom: 5px;
+
+    }
+    .leader .detail-leader .leader-title h2{
+        margin-bottom: 5px;
+    }
+    .form {
+        width: 100%;
+    }
+    .form .form1{
+        width: 100%;
+        height: 90vh;
+    }
+    .form .form1 .form-title{
+        width: 100%;
+    }
+    .form .form1 .form-title .line{
+        margin-left: 41.5%;
+        margin-bottom: 5px;
+    }
+    .form .form1 .contect form label{
+        font-size: 16px;
+        color: #333333;
+    }
+    .form .form1 .contect form input{
+        padding: 7px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        resize: vertical;
+        outline: none;
+        font-size: 15px;
+    }
+    
+    .form.form1 .contect form .upload {
+        height: 33px;
+        width: 100%;
+    }
+        
+    .form .form1 .contect .upload .svg{
+        width: 20px;
+        height: 20px;
+        margin: 0 10px;
+    }
+    .form .form1 .contect .upload #custom-text{
+        width: 10px;
+
+        font-size: 11px;
+    }
+    .form .form1 .contect{
+        width: 90%;
+        left: 6%;
+    }
+    .form .form1 .contect form .upload #fakebtn{
+        width: 110px;
+    }
+    .form .form1 .contect form .upload #custom-button{
+        width: 110px;
+    }
+    
+
+    
+}
+@media(max-width:415px){
+    .navbar{
+        width: 100%;
+    }
+    .navbar .logo{
+        width: 130px;
+    }
+    .searchBox:hover > .searchInput{
+        width: 140px;   
+        transition: all 0.3s linear;
+    }
+    .middle-container{
+        width: 100%;
+    }
+    .middle-container .middle-container1{
+        width: 100%;
+    }
+    .middle-container .middle-container1 img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .vision{
+        width: 100%;
+    }
+   
+    .reputation{
+        width: 100%;
+        height: 80vh;
+    }
+    .reputation .detail-reputation{
+        width: 100%;
+        height: 60vh;
+    }
+    .reputation .detail-reputation .sponsor-img{
+        width: 100%;
+        height: 400px;
+    }
+
+    .leader{
+        width: 100%;
+        padding: 30px 0;
+        height: 85vh;
+    }
+    .leader .detail-leader{
+        width: 97%;
+        border-radius: 5px;
+    }
+    .leader .detail-leader .video{
+        width: 388px;
+        height: 300px;
+    }
+    .leader .detail-leader .video img{
+        width: 100%;
+        height: 100%;
+    }
+    .form{
+        width: 100%;
+    }
+    .form .form1 .contect{
+        width: 100%;
+        padding: 0;
+        left: 0;
+    }
+    .spac{
+        height: 50vh;
+    }
+    .form .form1 .contect form .upload #custom-button{
+        font-size: 14px;
+        width: 120px;
+    }
+    .form .form1 .contect form .upload .svg{
+        width: 20px;
+        height: 25px;
+    }
+    .form .form1 .contect form .upload #custom-text{
+        font-size: 16px;
+    }
+    .form .form1 .contect form .upload #custom-Text{
+        font-size: 16px;
+    }
+    .form .form1 .contect form .upload #fakebtn{
+        width: 100px;
+        font-size: 14px;
+    }
+    footer{
+        width: 100%;
+    }
+    footer .footer .footer-left h1{
+        font-size: 22px;
+    }
+    footer .footer .footer-left .line{
+        width: 76px;
+    }
+    footer .footer .footer-right h1{
+        font-size: 22px;
+    }
+    footer .footer .footer-right .line{
+        width: 150px;
+    }
+    footer .footer .footer-right button{
+        width: 100px;
+        padding: 10px;
+    }
+    .middle-container{
+        height: 90vh;
+    }
+    .middle-container .middle-title{
+        font-size: 25px;
+        padding: 10px 0;
+    }
+    .middle-container .middle-container1{
+        width: 100rem;
+        padding: 5px 20px;
+        text-align: unset;
+    }
+
+}
+
+@media(max-width:376px){
+    .navbar{
+        width: 100%;
+    }
+    .navbar .logo{
+        width: 110px;
+        height: 25px;
+    }
+    .navbar .logo img{
+        width: 20px;
+        height: 20px;
+    }
+    .img-container{
+        width: 100%;
+        height: 95vh;
+    }
+
+    .img-container .text-pic{
+        padding: 30px ;
+    }
+
+    .vision{
+        width: 100%;
+    }
+   
+    .leader{
+        width: 100%;
+    }
+    .leader .detail-leader{
+        width: 97%;
+        border-radius: 5px;
+    }
+    .leader .detail-leader .video{
+        width: 355px;
+        height: 300px;
+    }
+    .leader .detail-leader .video img{
+        width: 100%;
+        height: 100%;
+    }
+    .form{
+        height: 90vh;
+    }
+    .form .form1 {
+        height: 110vh;
+    }
+    .form .form1 .contect form input[type=submit]{
+        margin-top: 5px;
+    }
+    .form .form1 .contect form .upload input{
+        width: 40%;
+        height: 40px;
+        margin-top: 5px;
+        text-align: center ;
+    }
+    footer{
+        width: 100%;
+    }
+    footer .footer{
+        width: 100%;
+    }
+
+    footer .footer .footer-right input{
+        width: 200px;
+    }
+
+    .form{
+        padding: 0 10px;
+    }
+    
+    .spac{
+        height: 0vh;
+    }
+    .form .form1 .contect{
+        width: 100%;
+    }
+    
+}
+/*End of Responsive website*/
+
+
+#demo {
+    height:100px;
+}
+.cv-carousel .item {
+    color: wheat;
+    padding: 10px;
+}
+.cv-item {
+    color: #fff;
+    text-align: center;
+}
+

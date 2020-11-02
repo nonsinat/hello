@@ -1,0 +1,378 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header file </title>
+    <link rel="icon" href="image/logo.png">
+    <link rel="javascript" href="js/js.js">
+  <!--  <script src="https://kit.fontawesome.com/9339050507.js" crossorigin="anonymous"></script>-->
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body> 
+   <!--Container-->
+    <div class="container"> 
+        <!--Navbar-->
+        <div class="navbar">
+            <!--Logo-->
+            <div class="logo">
+                <img src="image/logo.png" alt="E-Robot">
+                <div class="title-logo">
+                    <h5 class="E">E- ​​​​​</h5>
+                    <h5 class="robot">Robot</h5>
+                </div>
+            </div>
+            <!--End Logo-->
+            <!--Responsive-navbar-->
+            <div class="responsive-navbar">
+                <ul class="nav-left">
+                    <li>
+                        <a href="index2.html" target="blank1" class="home1">Articles</a>
+                    </li>
+                    <li>
+                        <a href="index1.html" target="blank2">Education</a>
+                    </li>
+                    <li>
+                        <a href="index4.html" target="blank3" class="mobile">Mobile App</a>
+                    </li>
+                </ul>
+                <!--Searchbox-->
+                <div class="searchBox">
+                    <input class="searchInput"type="text" name="" placeholder="Search">
+                    <button class="searchButton" href="#">
+                        <i class="material-icons" style="cursor: pointer;">Search</i>
+                    </button>
+                </div>
+                <!--End of Searchbox-->
+                <ul class="navbar-right">
+                    <li><a href="#" id="right1">Login</a></li>
+                    <li class="right1"><a href="#" style="align-items: center;">Sign Up</a></li>
+                </ul>
+            </div>
+            <!--End of Responsive-navbar-->
+            <!--closenav()-->
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="index1.html">Article</a>
+                <a href="#">Education</a>
+                <a href="#">Mobile app</a>
+                <a href="#">Login</a>
+                <a href="#">Sign up</a>
+            </div>
+            <button class="openbtn" onclick="openNav()">☰</button>
+        </div>
+        <!--End of Navbar-->
+        <!--First Page-->
+        <div class="img-container">
+                <div class="text-pic">
+                    <div class="text1">
+                        <h1 class="title1">E-Ro <h1 class="title2">bot</h1></h1>
+                    </div>
+                    <p>A team that comes with a pure heart of Cambodia youths</p>
+                    <a href="#" class="btn">About Us</a>
+                </div>
+                <img src="image/Right-side.png" class="img-container1">
+                <img src="image/Grid.png" class="grid">
+            </div>
+        <!--End First Page-->
+
+         <!--Start middle-container-->
+         <div class="middle-container" id="middle">
+            <h2 class="middle-title" >Who We Are?</h2>
+            <div class="middle-container1">
+            <img src="image/bg2.png">
+            <img src="image/Grid.png" class="grid">
+            <div class="tag1">
+                <img src="image/Grid.png" class="grid">
+                <p>
+
+                    We think we are creating the system for our own purpose. We believe we are making it in our own image... But the computer is not really like us. It is a projection fo a very slim part of ourselves: the protion devoted to ligic, order, rule, and clarity.
+                    We think we are creating the system for our own purpose. We believe we are making it in our own image... But the computer is not really like us. It is a projection fo a very slim part of ourselves: the protion devoted to ligic, order, rule, and clarity.
+                </p>
+                <p class="member">Member : <span>25</span></p>
+                <p class="Robot">Robot : <span>20</span></p>
+                <div class="button-btn">
+                    <a  class="btn" onclick="typewrite()">Read More</a>
+                    <p style="margin-top: 10px;" id="demo"></p>
+                   
+                </div>
+            </div>
+            </div>
+            
+        <!--End Of middle-container-->
+    </div>
+   <!--End of Container-->
+
+   <!--Script for sidebar-->
+   <script>
+       function openNav(){
+           document.getElementById("mySidepanel").style.width ="250px";
+       }
+       function closeNav(){
+           document.getElementById("mySidepanel").style.width="0";
+       }
+   </script>
+   <!--End of Script sidebar-->
+
+        <section class="vision" id="vision">
+            <!--Vision1-->
+            <div class="vision1">
+
+            <h1 class="vision-title">Our Vision</h1>
+            <!--Start Detail-vision-->
+
+        <div class="detail-vision">
+                <!--Left Box-->
+            <div class="box-left">
+                <div class="box">
+                    <img src="image/kosal.png" alt="">
+                    <div class="overlay">
+                        <div class="detail-overlay">
+                        <h1>Lorem</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reprehenderit ratione exercitationem ullam perspiciatis illo illum in laboriosam reiciendis eos praesentium, nesciunt recusandae nobis possimus voluptatum debitis quas suscipit rem.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Left Box-->
+                </div>
+            <!--Center Box-->
+                    <div class="box-center">
+                        <div class="box">
+                            <img src="image/kosal.png" alt="2">
+                            <div class="overlay">
+                                <div class="detail-overlay">
+                                <h1>Lorem</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex fugit eligendi porro suscipit corporis atque blanditiis, ducimus at maxime quos ut officiis id vero natus? Aut earum debitis eius nam.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+            <!--End Of Center Box-->
+
+            <!--Right box-->
+            <div class="box-right">
+                <div class="box">
+                    <img src="image/kosal.png" alt="3">
+                    <div class="overlay">
+                        <div class="detail-overlay">
+                        <h1>Lorem</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam at eligendi ad voluptas porro earum tempora iste minus, rem impedit obcaecati laudantium excepturi autem necessitatibus provident quas repellat modi optio!</p>
+                    </div>
+                    </div>
+                </div> 
+            </div>
+            <!--End of Right Box-->
+        </div>
+            </div> 
+            <!--End Of vision1-->
+        </section>
+        <!--End Of Our Vision-->
+
+          <!--Start section OF Reputation-->
+          <section class="reputation" id="reputaion">
+            <h1 class="reputation-title">Team Reputation</h1>
+            <div class="detail-reputation">
+                <div class="sponsor-img">
+                    <div id="demo">
+                        <div class="cv-carousel">
+                            <div class="item"><img src="image/PNC.png" alt=""></div>
+                            <div class="item"><img src="image/Smart.png" alt=""></div>
+                            <div class="item"><img src="image/Stem.png" alt=""></div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pnc-event">
+                    <h2>PNC Event</h2>
+                    <p>19th Jul, 2019</p>
+                    <img src="image/robot-car.png">
+                    <h3>Memories</h3>
+                    <p class="lorem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, totam eius. Temporibus quam amet laboriosam doloremque dolorum officiis sunt. Earum eligendi eum repudiandae cumque rerum culpa similique nisi ipsam itaque!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem architecto, odio facere ratione, consequatur a placeat repellendus, expedita tenetur temporibus quam! Hic sapiente inventore provident? Accusamus doloribus tempore laboriosam deleniti!
+                    </p>
+                   
+                    <div class="btn-reputation">
+                        <a >See More</a>
+                    </div>
+                   
+                </div>
+            </div>
+
+        </section>
+        <!--End Of secction Reputation-->
+
+        <!--Start leader-->
+        <section class="leader">
+            <div class="detail-leader">
+                
+                <div class="leader-title">
+                    <h1>Meet our team leader</h1>
+                    <h2>How to build a Robot</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet deleniti accusamus odio culpa voluptates. Autem, voluptas? Beatae eveniet corrupti fuga id, laboriosam architecto quas eos modi aut magni repellat voluptate?</p>
+                </div>
+                <div class="video">
+                    <img src="image/videos.png">
+                </div>
+                
+            </div>
+        </section>
+        <!--End Of Leader-->
+
+        
+        <!--Start Of Form-Registration-->
+        <section class="form">
+            <div class="form1">
+                <div class="form-title">
+                    <h1>Join us</h1>
+                    <div class="line"></div>
+                        <p>Work with us on research development with fun!</p>
+                </div>
+                            
+             <div class="contect">
+            <form action="/action_page.php">
+                <h1>Fill the form</h1>
+                <p>Your form willl be revieced in a day.</p>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Where and which major do you study?</label>
+                <input type="text" id="skill" >
+                <label for="country">Why do you want to joins? </label>
+                <input type="text" id="skill" >
+
+                <label for="subject" style="padding: 0 0 4px 0;">Subject:</label>
+                <textarea id="subject" name="subject" class="textarea"placeholder="Write something.." style="height:120px;  font-size: 16px;"></textarea>
+
+                <label for="upload">Your Profile Picture</label>
+
+
+                <div class="upload">
+                    <svg class="svg" width="18" height="19" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.67188 11.9994H6.32812C5.93848 11.9994 5.625 11.665 5.625 11.2493V5.99854H3.05566C2.53418 5.99854 2.27344 5.32656 2.64258 4.93275L7.09863 0.175807C7.31836 -0.0586023 7.67871 -0.0586023 7.89844 0.175807L12.3574 4.93275C12.7266 5.32656 12.4658 5.99854 11.9443 5.99854H9.375V11.2493C9.375 11.665 9.06152 11.9994 8.67188 11.9994ZM15 11.7494V15.2499C15 15.6656 14.6865 16 14.2969 16H0.703125C0.313477 16 0 15.6656 0 15.2499V11.7494C0 11.3337 0.313477 10.9993 0.703125 10.9993H4.6875V11.2493C4.6875 12.2151 5.42285 12.9996 6.32812 12.9996H8.67188C9.57715 12.9996 10.3125 12.2151 10.3125 11.2493V10.9993H14.2969C14.6865 10.9993 15 11.3337 15 11.7494ZM11.3672 14.4998C11.3672 14.156 11.1035 13.8747 10.7812 13.8747C10.459 13.8747 10.1953 14.156 10.1953 14.4998C10.1953 14.8436 10.459 15.1249 10.7812 15.1249C11.1035 15.1249 11.3672 14.8436 11.3672 14.4998ZM13.2422 14.4998C13.2422 14.156 12.9785 13.8747 12.6562 13.8747C12.334 13.8747 12.0703 14.156 12.0703 14.4998C12.0703 14.8436 12.334 15.1249 12.6562 15.1249C12.9785 15.1249 13.2422 14.8436 13.2422 14.4998Z" fill="#03A0B0"/>
+                        </svg>
+                        
+                    <input type="file" name="Profile" id="profile" hidden="hidden">
+                    <span id="custom-text" class="custom-text" style="color:#ccc;font-size: 15px;">No file choose , yet!</span>
+                    <button type="button" id="custom-button">Choose file</button>
+
+                    <script>
+                                                
+                        const realbtn =document.getElementById("profile");
+                        const custombtn =document.getElementById("custom-button");
+                        const customtxt= document.getElementById("custom-text");
+                        custombtn.addEventListener("click",function(){
+                            realbtn.click();
+                        });
+                        realbtn.addEventListener("change",function(){
+                            if(realbtn.value){
+                                customtxt.innerHTML=realbtn.value;
+                            }else{
+                                customtxt.innerHTML="No file choose, yet!";
+                            }
+                        });
+                    </script>
+
+                   
+
+                </div>
+                <label for="upload">CV or Works (Optional/If haves) </label>
+               
+                <div class="upload">
+                    <svg class="svg" width="18" height="20" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.67188 11.9994H6.32812C5.93848 11.9994 5.625 11.665 5.625 11.2493V5.99854H3.05566C2.53418 5.99854 2.27344 5.32656 2.64258 4.93275L7.09863 0.175807C7.31836 -0.0586023 7.67871 -0.0586023 7.89844 0.175807L12.3574 4.93275C12.7266 5.32656 12.4658 5.99854 11.9443 5.99854H9.375V11.2493C9.375 11.665 9.06152 11.9994 8.67188 11.9994ZM15 11.7494V15.2499C15 15.6656 14.6865 16 14.2969 16H0.703125C0.313477 16 0 15.6656 0 15.2499V11.7494C0 11.3337 0.313477 10.9993 0.703125 10.9993H4.6875V11.2493C4.6875 12.2151 5.42285 12.9996 6.32812 12.9996H8.67188C9.57715 12.9996 10.3125 12.2151 10.3125 11.2493V10.9993H14.2969C14.6865 10.9993 15 11.3337 15 11.7494ZM11.3672 14.4998C11.3672 14.156 11.1035 13.8747 10.7812 13.8747C10.459 13.8747 10.1953 14.156 10.1953 14.4998C10.1953 14.8436 10.459 15.1249 10.7812 15.1249C11.1035 15.1249 11.3672 14.8436 11.3672 14.4998ZM13.2422 14.4998C13.2422 14.156 12.9785 13.8747 12.6562 13.8747C12.334 13.8747 12.0703 14.156 12.0703 14.4998C12.0703 14.8436 12.334 15.1249 12.6562 15.1249C12.9785 15.1249 13.2422 14.8436 13.2422 14.4998Z" fill="#03A0B0"/>
+                        </svg>
+
+                        <input type="file" id="realBtn" hidden="hidden">
+                        <span id="custom-Text" style="font-size: 15px;">No file choose , yet!</span>
+                        <button type="button" id="fakebtn" >Choose file </button>
+
+                        <script>
+                            const real_Btn =document.getElementById("realBtn");
+                            const customBtn = document.getElementById("fakebtn");
+                            const customTxt = document.getElementById("custom-Text");
+                            customBtn.addEventListener("click",function(){
+                                real_Btn.click();
+                            });
+
+                            real_Btn.addEventListener("change",function(){
+                                if(real_Btn.value){
+                                    customTxt.innerHTML =real_Btn.value;
+                                }else{
+                                    customTxt.innerHTML="No file choose,yet!";
+                                }
+                            });
+                        </script>
+
+                </div>
+                        
+
+                <input type="submit" value="Submit">
+            </form>
+            </div> 
+
+            </div>
+        </section>
+        <!--End of Form-Registration-->
+        <?xml version="1.0" standalone="no"?><svg class="background" xmlns="http://www.w3.org/2000/svg" viewBox="750 0 1200 320"><path fill="rgb(21,3,54)" fill-opacity="1" d="M0,32L48,69.3C96,107,192,181,288,197.3C384,213,480,171,576,133.3C672,96,768,64,864,90.7C960,117,1056,203,1152,240C1248,277,1344,267,1392,261.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        <div class="spac"></div>
+
+        <!--Footer-->
+        <footer>
+            <div class="footer">
+                <div class="footer-left">
+                    <h1>Contact</h1>
+                    <div class="line"></div>
+                    <p>Erobot:example@erobot.teach</p>
+                    <p>Mobile(+855):00000000</p>
+                    <div class="social">
+                        <img src="image/facebook.png">  
+                        <a href="#">Erobot</a>
+                    </div>
+                    
+                </div>
+                <div class="footer-right">
+                    <h1>Stay connected</h1>
+                    <div class="line"></div>
+                    <p>Subscribe to receive our robot tutorial articles and videos <br> Education</p>
+                    <input type="email" placeholder="Enter address"> <br>
+                    <button>Subscribe</button>
+                </div>
+            </div>
+            
+        </footer>   
+
+        <!--End of Footer-->
+        <div class="finish">
+             <p>Copyright © 2020,by Erobot</p>
+        </div>
+
+    </div>
+    <!--111End of Container-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="js/carousel-vertical.js"></script>
+    <script type="text/javascript">
+        (function($){
+            $(document).ready(function(){
+                // init
+                $('.cv-carousel').carouselVertical({
+                    nav: false
+                });
+                // for moving programmatically the carousel
+                // you can do that
+                $('.cv-carousel').trigger('goTo', [1]);
+                // or that
+                $('.cv-carousel').carouselVertical().trigger('goTo', [1]);
+            });
+        })(jQuery);
+    </script>
+</body>
+</html>

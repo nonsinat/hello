@@ -1,0 +1,826 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    height: 650vh;
+  
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(29, 6, 71);
+    position: sticky;
+    top: 0px;
+    transition: all 0.3s linear;
+    align-items: center;
+}
+.navbar .logo{
+    width: 7rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    border-radius: 30px;
+    margin-left: 5px;
+    
+    transition: all 0.3s linear;
+}
+.navbar .logo .ero{
+    font-size: 15px;
+    color: black;
+}
+.navbar .logo img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.navbar .responsive-navbar{
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+.navbar .responsive-navbar .nav-left{
+    display: flex;
+    padding: 0 25px;
+    height: 40px;
+    align-items: center;
+}
+.navbar .responsive-navbar .nav-left a{
+    text-decoration: none;
+    padding: 0 34px;
+    list-style-type: none;
+    color: #f4f4f4;
+    padding: 10px 25px;
+}
+.navbar .responsive-navbar .nav-left a:hover{
+    color: rgb(36, 7, 90);
+    transition: all 0.3s linear;
+    background-color: #f4f4f4;
+   
+}
+.navbar .responsive-navbar .nav-left li{
+    list-style-type: none;
+}
+.navbar .responsive-navbar .navbar-right {
+    display: flex;
+    width: 15%;
+    align-items: center;
+    list-style-type: none;
+    padding: 0 10px;
+    height: 40px;
+}
+
+.navbar .responsive-navbar .navbar-right a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s linear;
+    font-size: 15px;
+}
+.navbar .responsive-navbar .navbar-right  .right1{
+    background-color: red;
+    padding: 7px 2px;
+    border-radius: 30px;
+}
+.navbar .responsive-navbar .navbar-right  .right1:hover{
+    opacity: 0.8;
+    transition: all 0.3s linear;
+}
+/*.navbar .responsive-navbar .navbar-right  .right1 a:hover{
+    color: red;
+    transition: all 0.3s linear;
+}*/
+.img-container{
+    width: 100%;
+    height: 94.5vh;
+    background-color: rgb(21, 3, 54);
+   
+}
+.img-container .img-container1{
+    position: absolute;
+    left: 775px;
+    transition: all 0.3s linear;
+
+}
+
+.img-container .text-pic{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    left: 200px;
+    transition: all 0.3s linear;
+}
+.img-container .text-pic .text1{
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.img-container .text-pic p{
+    color:  #ffffff;
+    font-size: 20px;
+}
+.img-container .text-pic .btn{
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: red;
+    width: 10%;
+    text-align: center;
+    padding: 12px 15px;
+    border-radius: 30px;
+    color: #ffffff;
+    transition: all 0.3s linear ;
+}
+.img-container .text-pic .btn:hover{
+    opacity: 0.8;
+    
+}
+/*.btn{
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: red;
+    width: 10%;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: #ffffff;
+    transition: all 0.3s linear ;
+}
+.btn:hover{
+    opacity: 0.8;
+    
+}
+*/
+.navbar .img-navbar{
+   width: 906px;
+   height: 906px;
+   top: -212px;
+   left:626px;
+    position: absolute;
+    background-color: #172634;
+    border-radius: 50%;
+}
+
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+}
+.title h1{
+    font-size: 3em;
+    color: #333333;
+}
+/*Button Search*/
+.searchBox
+{
+    transform: translate(-50%,0%);
+    background-color: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    position: absolute;
+    left: 50%;
+    transition: all 0.3s linear;
+}
+.searchBox:hover > .searchInput{
+    width: 350px;
+    padding: 10px 6px;
+    transition: all 0.3s linear;
+}
+.searchBox:hover > .searchButton{
+    
+    color: #ffffff;
+    transition: all 0.3s linear;
+}
+
+.searchButton{
+    color: #ffffff;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    transition: all 0.4s linear;
+}
+.searchInput{
+    font-size:15px ;
+    padding: 0px;
+    border:none;
+    background: none;
+    float: left;
+    outline: none;
+    color: #ffffff;
+    transition:all 0.4s linear;
+    width: 0px;
+}
+@media screen and (max-width:620px){
+    .searchBox:hover > .searchInput{
+        width: 150px;
+        transition: all 0.3s linear ;
+        
+
+    }
+}
+
+/*End Of Button Search*/
+
+/*Start middle-container*/
+.middle-container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(36, 7, 90);
+}
+.middle-container .middle-title{
+    width: 100%;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 2em;
+}
+.middle-container .middle-container1{
+    display: flex;
+    width: 100%;
+    max-width: 80rem ;
+    margin: auto;
+    padding: 20px 40px;
+    text-align: justify;
+}
+.middle-container .middle-container1 .tag1{
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: 17px;
+}
+.middle-container .middle-container1 .tag1 p{
+    margin-bottom: 20px;
+}
+.member span{
+    color: #0683cc;
+}
+.Robot span{
+    color: #0683cc;
+
+}
+.middle-container1 .tag1 a{
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: rgb(19, 111, 218);
+    width: 12%;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: #ffffff;
+    transition: all 0.3s linear ;
+}
+.middle-container1 .tag1 a:hover{
+    opacity: 0.8;
+}
+
+
+/*End of middle-container*/
+
+/*Start Vision*/
+.vision{
+    background-color: rgb(21, 3, 54);
+    color: white;
+    width: 100%;
+    height: 100vh;
+}
+.vision .vision1{
+    width: 100%;
+    height: 100%;
+}
+.vision .vision1 .vision-title{
+    width: 100%;
+    height: 10%;
+
+
+    text-align: center;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-weight: normal;
+}
+.vision .vision1 .detail-vision{
+    
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+/*.vision .vision1 .detail-vision .vision-left{
+    width: 30%;
+    height: 80%;
+    margin: auto;
+    background: url(image/kosal.png);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.vision .vision1 .detail-vision .vision-left .liner{
+    background: rgb(4, 202, 252);
+    width: 22.8rem;
+    height: 34.3rem;
+    position: absolute;
+    top: 218.8vh;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+.vision .vision1 .detail-vision .vision-left .detail-liner{
+    width: 22.8rem;
+    height: 34.3rem;
+    position: absolute;
+    top: 218.8vh;
+    padding: 20px;
+    
+}*/
+
+.vision .vision1 .detail-vision .vision-left{
+    width:30%;
+    height: 80%;
+    margin:auto ;
+    background:url(image/kosal.png);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius: 5px;
+}
+.vision .vision1 .vision-left .liner{
+    background: rgb(4, 202, 252);
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+.vision .vision1 .vision-left .detail-left{
+    width: 22.8rem;
+    height: 34.3rem;
+    position: absolute;
+    top: 218.8vh;
+    padding: 20px;
+}
+.vision .vision1 .vision-left .detail-left p{
+    font-size: 17px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.vision .vision1 .detail-vision .vision-center{
+    width: 34%;
+    background: url(image/kosal.png);
+    height: 95%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+}
+.vision .vision1 .vision-center .liner1{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+.vision .vision1 .vision-center .detail-center{
+    width: 26rem;
+    height: 34.3rem;
+    position: absolute;
+    top: 210.8vh;
+    padding: 20px;
+}
+.vision .vision1 .vision-center .detail-center p{
+    text-align: justify;
+    margin: 10px;
+    font-size: 17px;
+}
+
+.vision .vision1 .detail-vision .vision-right{
+    width:30%;
+    height: 80%;
+    margin:auto ;
+    background:url(image/kosal.png);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-radius: 5px;
+}
+.vision .vision1 .vision-right .liner{
+    background-color: green;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+.vision .vision1 .vision-right .detail-right{
+    width: 22.8rem;
+    height: 34.3rem;
+    position: absolute;
+    top: 218.8vh;
+    padding: 20px;
+}
+.vision .vision1 .vision-right .detail-right p{
+    font-size: 17px;
+    margin: 10px;
+    text-align: justify;
+}
+/*End Of vision*/
+
+/*Start of Section Reputation*/
+.reputation
+{
+    width: 100%;
+    height:95vh;
+    background-color: rgb(36, 7, 90);
+}
+.reputation .reputation-title{
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-weight: normal;
+    font-size:25px;
+}
+.reputation .detail-reputation{
+    width: 100%;
+    max-width: 93%;
+    margin: auto;
+    display: flex;
+    background-color: rgb(21, 3, 54);
+    height: 80%;
+}
+.reputation .detail-reputation .sponsor-img{
+    width:50%;
+    height: 550px;
+    padding: 20px 10px;
+    margin: auto;
+}
+.reputation .detail-reputation .sponsor-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.reputation .detail-reputation .pnc-event{
+    background-color: white;
+    padding: 15px 20px;
+    width: 80%;
+    height: 100%;
+}
+.reputation .detail-reputation .pnc-event h2{
+    font-weight: normal;
+}
+.reputation .detail-reputation .pnc-event p{
+    margin-bottom: 15px;
+}
+.reputation .detail-reputation .pnc-event img{
+    width: 100%;
+    height: 300px;
+}
+.reputation .detail-reputation .pnc-event h3{
+    padding: 15px 0;
+    font-weight: normal;
+    font-size: 20px;
+}
+.reputation .detail-reputation .pnc-event .lorem{
+    text-align: justify;
+}
+.reputation .detail-reputation .pnc-event .btn-reputation{
+    background-color: #333333;
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    float: right;
+    transition: all 0.3s linear;
+}
+.reputation .detail-reputation .pnc-event a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.reputation .detail-reputation .pnc-event .btn-reputation:hover{
+    opacity: 0.3;
+}
+/*End of Section Reputation*/
+
+/*Start Of section Leader*/
+.leader{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(21, 3, 54);
+    padding: 70px 0 ;
+
+
+}
+.leader .detail-leader{
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    width: 60%;
+    max-width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+
+.leader .detail-leader .leader-title h1{
+    font-weight: normal;
+    margin-bottom: 15px;
+    font-size: 30px;
+    text-align: center  ;
+    font-style: unset;
+}
+.leader .detail-leader .leader-title h2{
+    font-weight: normal;
+    color: red;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*End of section Leader*/
+
+/*Start Form Registration*/
+.form{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(29, 6, 71);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form .form1{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.form .form1 .form-title{
+    width: 45%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form .form1 .form-title h1{
+    font-weight: normal;
+    color: rgb(56, 224, 224);
+    font-style: oblique;
+}   
+.form .form-title .line{
+    height: 1px;
+    background-color: rgb(72, 187, 187);
+    margin-top: 2px;
+    width: 70px ;
+}
+.form .form-title p{
+    margin-top: 3px;
+    width: 100%;
+}
+.form .form1 .detail-form{
+    width: 45rem;
+    height: 37rem;
+    background-color: #ffffff;
+    color: #172634;
+    padding: 20px;
+    border-radius: 10px;
+}
+.form .form1 .detail-form h1{
+    font-weight: normal;
+    font-size: 27px;
+}
+.form .form1 .detail-form p{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.form .form1 .detail-form label{
+    font-size: 20px;
+    
+}
+.form .form1 .detail-form input{
+    width: 70%;
+    height: 30px;
+}
+/*End of Form Registration*/
+
+/*Footer*/
+.footer{
+    width: 100%;
+    height: 90vh;
+}
+.footer .header-footer{
+    width: 100%;
+    padding: 26px;
+    background-color: #6610f2;
+    color: #ffffff;
+
+}
+.footer .detail-footer{
+    display: flex;
+    width: 100%;
+    background-color: #0683cc;
+}
+/*End of Footer*/
+
+
+/*Responsive*/
+
+@media(max-width:1500px){
+    .middle-container .middle-container1 img{
+       width: 70%;   
+    }
+    .navbar{
+        max-width: 100%;
+    }
+    .navbar .responsive-navbar .navbar-right{
+        width: 200px;
+    }
+    .navbar .logo{
+        width: 8rem;
+    }
+    .navbar .logo .ero{
+        font-size: 18px;
+    }
+
+    
+    .navbar .logo img{
+        width: 25px;
+        height: 25px;
+    }
+    
+
+}
+@media(max-width:1400px){
+    .navbar{
+        width: 100%;
+    }
+    .searchBox{
+        position: absolute;
+        left: 55%;
+    }
+    .navbar .responsive-navbar .nav-left li{
+        width: 100px;
+        
+        
+    }
+    .navbar .responsive-navbar .nav-left li a{
+        padding: 12px 10px;
+        font-size: 15px;
+
+    }
+    .navbar .logo{
+        width: 120px;
+    }
+}
+@media (max-width:1165px){
+
+    .img-container {
+        width:100%
+    }
+    .img-container .img-container1{
+        position: absolute;
+        left: 550px;
+        width: 600px;
+        transition: all 0.3s linear;
+        height: 600px;
+    }
+    .img-container .text-pic{
+        width: 100%;
+        height: 80%;
+    }
+    
+    .searchBox{
+        position: absolute;
+        left: 60%;
+    }
+
+}
+
+@media(max-width:950px){
+    .img-container{
+        width: 100%;
+    }
+    
+    .img-container .text-pic{
+        position: absolute;
+        left: 100px;
+    }
+    .img-container .text-pic .btn{
+        width: 100px;
+    } 
+    .img-container .text-pic a{
+        font-size: 13px;
+    }
+
+    
+}
+
+@media(max-width:800px){
+    .middle-container1{
+        display: flex;
+        flex-direction: column;
+    }
+    .middle-container .middle-container1 img{
+        width:  94%;
+        height: 40vh;
+        margin: auto;
+        margin-left: 22px;
+        margin-bottom: 10px;
+    }
+    .middle-container .middle-title{
+        display: flex;
+        height: 5rem;
+        flex-direction: column;
+        justify-content: flex-end;
+        max-width: 90%;
+        margin: auto;
+        padding: 10px;
+    }
+
+   /* .middle-container .middle-container1 .tag1 .btn{
+        background-color: #cc8706;
+        margin: auto;
+        position: absolute;
+        width: 7.5rem;
+        left: 290px;
+    } */
+}
+@media (max-width:600px){
+    .middle-container .middle-container1 .tag1 .button-btn{
+        max-width: 100%;
+        margin-left: 76px;
+        margin: auto;
+        display: block;
+    }
+    .middle-container .middle-container1 .tag1 .button-btn a{
+        font-size: 15px;
+        margin-left: 145px;
+    }
+    .searchBox{
+        position: absolute;
+        top: 0px;
+        left: 69%;
+        transition: all 0.3s linear;
+    }
+    .searchBox:hover{
+        position: absolute;
+        left: 50%;
+        top: 35px;
+    }
+    .navbar{
+        background-color: #0683cc;
+    }
+    .navbar .responsive-navbar .mobile{
+        display: none;
+    }
+    .navbar .responsive-navbar .nav-left{
+        width: 10%;
+    }
+    .navbar .responsive-navbar .navbar-right #right1{
+        display: none;
+    }
+    .navbar .responsive-navbar .navbar-right{
+        width: 200px;
+    }
+    .img-container .img-container1{
+        display: none;
+    }
+}
+/*End of REsponsive*/

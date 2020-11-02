@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box ;
+    background-color: #23252a;
+}
+li,a,button{
+    font-family: "Montserrat" sans-serif;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Light</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        min-height: 100vh;
+        text-align: center;
+        background-color: black;
+        font-family: "Raleway",sans-serif;
+    }
+    h1{
+        font-weight: normal;
+    }
+    .neon{
+        font-family: "Raleway",sans-serif;
+
+        position:absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 0;
+        padding: 0 30px;
+        font-size: 6em;
+        color: #fff;
+        text-shadow: 0 0 20px #ff005b;
+    }
+    .neon::after{
+        content: attr(data-text);
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 0 30px;
+        z-index: -2;
+        color: #ff005b;
+        filter: blur(15px);
+    }
+    .neon::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fe3a80;
+        z-index:-2;
+        opacity: -5;
+        filter: blur(40px);
+    }
+</style>
+
+</head>
+<body>
+    <h1 class="neon" data-text="[Neon_Light]">[Neon_Light]</h1>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!--doctype html-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA_Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>Ecommerce Slider</title>
+<!--page-icon------------>
+<link rel="shortcut icon" href="images/logo.png">
+
+<!--stylesheet------------->
+
+<style>
+	@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px;
+	padding: 0px;
+	background-color:#eef8ff;
+}
+a{
+	text-decoration:none;
+}
+.box{
+	width:300px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 10px;
+}
+.slide-img{
+	height: 450px;
+	position:relative;
+}
+.slide-img img{
+	width:100%;
+	height: 100%;
+	object-fit: cover;
+	box-sizing: border-box;
+}
+.detail-box{
+	width: 100%;
+display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	font-family: calibri;
+}
+.type{
+	display: flex;
+	flex-direction: column;
+}
+.type a{
+	color:#222222;
+	margin: 5px 0px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	padding-right: 8px;
+}
+.type span{
+	color:rgba(26,26,26,0.5);
+}
+.price{
+	color: #333333;
+	font-weight: 600;
+	font-size: 1.1rem;
+	font-family: poppins;
+	letter-spacing: 0.5px;
+}
+.overlay{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width:100%;
+	height: 100%;
+	background-color: rgba(92,95,236,0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.buy-btn{
+	width:160px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFFFFF;
+	color:#252525;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-family: calibri;
+	border-radius: 20px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+}
+.buy-btn:hover{
+	color:#FFFFFF;
+	background-color: #f15fa3;
+	transition: all ease 0.3s;
+}
+.overlay{
+	visibility: hidden;
+}
+.slide-img:hover .overlay{
+	visibility: visible;
+	animation:fade 0.5s;
+}
+ 
+@keyframes fade{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.slider{
+	width:100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.cs-hidden{
+	display: flex;
+}
+ 
+</style>
+
+</head>
+
+
+<body>
+	<section class="slider">
+		<ul id="autoWidth" class="cs-hidden">
+			<!--1------------------------------------>	
+			<li class="item-a">
+			<!--box-slider--------------->
+				<div class="box">
+				<!--img-box---------->
+					<div class="slide-img">
+						<img alt="1" src="https://1.bp.blogspot.com/-SjuKuioH9PY/XmvPrQn11zI/AAAAAAAAMjc/q-TYxi4wgoAsChV-P5X8zrVK4_panoFUACLcBGAsYHQ/s1600/post-malone-wallpaper.jpg">
+					<!--overlayer---------->
+						<div class="overlay">
+					<!--buy-btn------>	
+						<a href="#" class="buy-btn">Buy Now</a>	
+						</div>
+					</div>
+				<!--detail-box--------->
+				<div class="detail-box">
+				<!--type-------->
+				<div class="type">
+				<a href="#">Rabbed Cardigan</a>
+				<span>Noe Arrival</span>
+				</div>
+				<!--price-------->
+				<a href="#" class="price">$23</a>
+					
+				</div>
+				
+				</div>		
+			</li>
+				<!--2------------------------------------>	
+			<li class="item-b">
+			<!--box-slider--------------->
+				<div class="box">
+				<!--img-box---------->
+				<div class="slide-img">
+				<img alt="2" src="https://1.bp.blogspot.com/-nreXaGpswfs/XmvQ3YOC4lI/AAAAAAAAMjk/8dyYaUOdw0snoMtydz5jgnCN8SzJ-MhmQCLcBGAsYHQ/s1600/post-malone-wallpaper-iphone.jpg">
+				<!--overlayer---------->
+				<div class="overlay">
+				<!--buy-btn------>	
+				<a href="#" class="buy-btn">Buy Now</a>	
+				</div>
+				</div>
+				<!--detail-box--------->
+				<div class="detail-box">
+				<!--type-------->
+				<div class="type">
+				<a href="#">Rabbed Cardigan</a>
+				<span>Noe Arrival</span>
+				</div>
+				<!--price-------->
+				<a href="#" class="price">$20</a>
+					
+				</div>
+				
+				</div>		
+			</li>
+				<!--3------------------------------------>	
+			<li class="item-c">
+			<!--box-slider--------------->
+				<div class="box">
+				<!--img-box---------->
+				<div class="slide-img">
+				<img alt="3" src="https://i.pinimg.com/originals/87/05/4c/87054c289a4ea3640747936ec50e076f.jpg">
+				<!--overlayer---------->
+				<div class="overlay">
+				<!--buy-btn------>	
+				<a href="#" class="buy-btn">Buy Now</a>	
+				</div>
+				</div>
+				<!--detail-box--------->
+				<div class="detail-box">
+				<!--type-------->
+				<div class="type">
+				<a href="#">Rabbed Cardigan</a>
+				<span>Noe Arrival</span>
+				</div>
+				<!--price-------->
+				<a href="#" class="price">$26</a>
+					
+				</div>
+				
+				</div>		
+			</li>
+				<!--4------------------------------------>	
+			<li class="item-d">
+			<!--box-slider--------------->
+				<div class="box">
+				<!--img-box---------->
+				<div class="slide-img">
+				<img alt="4" src="https://1.bp.blogspot.com/-nreXaGpswfs/XmvQ3YOC4lI/AAAAAAAAMjk/8dyYaUOdw0snoMtydz5jgnCN8SzJ-MhmQCLcBGAsYHQ/s1600/post-malone-wallpaper-iphone.jpg">
+				<!--overlayer---------->
+				<div class="overlay">
+				<!--buy-btn------>	
+				<a href="#" class="buy-btn">Buy Now</a>	
+				</div>
+				</div>
+				<!--detail-box--------->
+				<div class="detail-box">
+				<!--type-------->
+				<div class="type">
+				<a href="#">Rabbed Cardigan</a>
+				<span>Noe Arrival</span>
+				</div>
+				<!--price-------->
+				<a href="#" class="price">$27</a>
+					
+				</div>
+				
+				</div>		
+			</li>
+				<!--5------------------------------------>	
+			<li class="item-e">
+			<!--box-slider--------------->
+				<div class="box">
+				<!--img-box---------->
+				<div class="slide-img">
+				<img alt="5" src="https://i.pinimg.com/originals/ea/f2/92/eaf2922e8ab6f4f12a6580d2a06448e0.jpg">
+				<!--overlayer---------->
+				<div class="overlay">
+				<!--buy-btn------>	
+				<a href="#" class="buy-btn">Buy Now</a>	
+				</div>
+				</div>
+				<!--detail-box--------->
+				<div class="detail-box">
+				<!--type-------->
+				<div class="type">
+				<a href="#">Rabbed Cardigan</a>
+				<span>Noe Arrival</span>
+				</div>
+				<!--price-------->
+				<a href="#" class="price">$26</a>
+					
+				</div>
+				
+				</div>		
+			</li>
+				<!--6------------------------------------>	
+			<li class="item-f">
+			<!--box-slider--------------->
+				<div class="box">
+				<!--img-box---------->
+				<div class="slide-img">
+				<img alt="6" src="https://pbs.twimg.com/profile_images/967159859903893508/52pvLorW.jpg">
+				<!--overlayer---------->
+				<div class="overlay">
+				<!--buy-btn------>	
+				<a href="#" class="buy-btn">Buy Now</a>	
+				</div>
+				</div>
+				<!--detail-box--------->
+				<div class="detail-box">
+				<!--type-------->
+				<div class="type">
+				<a href="#">Rabbed Cardigan</a>
+				<span>Noe Arrival</span>
+				</div>
+				<!--price-------->
+				<a href="#" class="price">$30</a>
+					
+				</div>
+				
+				</div>		
+			</li>
+				<!--7------------------------------------>	
+			<li class="item-g">
+			<!--box-slider--------------->
+				<div class="box">
+				<!--img-box---------->
+				<!--detail-box--------->
+				<div class="slide-img">
+				<img alt="7" src="https://i.pinimg.com/564x/e4/bf/2f/e4bf2fb13bd422f3947e101ff4b5972f.jpg">
+				<!--overlayer---------->
+				<div class="overlay">
+				<!--buy-btn------>	
+				<a href="#" class="buy-btn">Buy Now</a>	
+				</div>
+				</div>
+				<div class="detail-box">
+				<!--type-------->
+				<div class="type">
+				<a href="#">Rabbed Cardigan</a>
+				<span>Noe Arrival</span>
+				</div>
+				<!--price-------->
+				<a href="#" class="price">$33</a>
+					
+				</div>
+				
+				</div>		
+			</li>
+				<!--8------------------------------------>	
+			<li class="item-h">
+			<!--box-slider--------------->
+				<div class="box">
+				<!--img-box---------->
+				<div class="slide-img">
+				<img alt="8" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQVZ4CFJRnNBSMVNr0QrCJab2JIFIfwn2Y-kA&usqp=CAU">
+				<!--overlayer---------->
+				<div class="overlay">
+				<!--buy-btn------>	
+				<a href="#" class="buy-btn">Buy Now</a>	
+				</div>
+				</div>
+				<!--detail-box--------->
+				<div class="detail-box">
+				<!--type-------->
+				<div class="type">
+				<a href="#">Rabbed Cardigan</a>
+				<span>Noe Arrival</span>
+				</div>
+				<!--price-------->
+				<a href="#" class="price">$43</a>
+					
+				</div>
+				
+				</div>		
+			</li>
+			
+			</ul>
+				</section>
+	
+	
+	
+<!--script-link----------->
+<script>
+	// JavaScript Document
+$(document).ready(function() {
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cS-hidden');
+        } 
+    });  
+  });
+</script>
+</body>
+<script>
+	// JavaScript Document
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cS-hidden');
+        } 
+    });  
+  });
+$(document).ready(function() {
+</script>
+</html>

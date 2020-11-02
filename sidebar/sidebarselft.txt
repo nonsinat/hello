@@ -1,0 +1,11 @@
+ <div class="sidepanel" id="mySidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="close()">×</a>
+                <a href="#">Articles</a>
+                <a href="#">Education</a>
+                <a href="#">Mobile App</a>
+            </div>
+
+            <div class="hambuger" style="color: aliceblue;">
+                <h1 onclick="open()">☰</h1>
+            </div>
+        </div>
