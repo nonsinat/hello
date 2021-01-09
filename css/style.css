@@ -1,10 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-
+    box-sizing: border-box; 
 }
-body{
+body{ 
     font-family:"Raleway",sans-serif;
     font-size: 15px;
     background-color: rgb(21, 3, 54);
@@ -589,6 +588,16 @@ html{
     padding: 20px;
     font-weight: normal;
     font-size:25px;
+}
+.reputation .reputation-sponsor{
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-weight: normal;
+    font-size:25px;
+    display: none;
+
 }
 .reputation .detail-reputation{
     width: 100%;
@@ -1208,6 +1217,20 @@ footer .footer .footer-right button{
     }
     .reputation .detail-reputation .pnc-event{
         display: none;
+    }
+    .reputation-title{
+        display: none;
+        font-size: 29px;
+    }
+    .reputation .detail-reputation{
+        width: 100%;
+        padding: 0;
+    }
+    .reputation .reputation-sponsor{
+        display: block;
+        font-size: 29px;
+
+
     }
     footer{
         width: 100%;
